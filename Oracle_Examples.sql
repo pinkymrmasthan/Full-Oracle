@@ -57,6 +57,14 @@ Oracle GROUP BY Clause
     In Oracle GROUP BY clause is used with SELECT statement to collect data from multiple records and group the results by one or more columns.
 
 
+        String Function In Oracle 
+        *************************
+
+SELECT REGEXP_REPLACE('9087779826', '(\d{3})\d{4}(\d{3})', '\1****\2') FROM dual;                #---> Phoen Number Hiding .
+
+
+
+
 
  
  
