@@ -63,6 +63,9 @@ Oracle GROUP BY Clause
 SELECT REGEXP_REPLACE('9087779826', '(\d{3})\d{4}(\d{3})', '\1****\2') FROM dual;                #---> Phoen Number Hiding .
 
 
+SELECT Employee_ID, First_Name, Salary , to_char(Hire_date, 'dd-mm-yyyy') as Hire_Date, ceil(MONTHS_BETWEEN(SYSDATE, Hire_Date)/12) AS NUMBER_OF_Years FROM masthan
+
+
 
 
 
