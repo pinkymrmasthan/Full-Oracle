@@ -67,6 +67,25 @@ SELECT Employee_ID, First_Name, Salary , to_char(Hire_date, 'dd-mm-yyyy') as Hir
 
 
 
+Create View 
+************
+        create view Check_Masthan as Select * from masthan;
+
+Case Using
+**********
+        select First_Name, Email, Salary, case when Employee_Id = 10 then 'Ten' else to_char(Employee_Id) end from masthan;
+
+database flashback on 
+*********************
+        alter database flashback on;
+
+alter session set container = Database_Name;
+
+
+
+
+
+
 
 
  
